@@ -2,7 +2,7 @@
 
 import sortable from './sortable.js'; 
 
-function deleteItem(el) {
+function deleteZone(el) {
 
 	el.addEventListener('dragenter', function(e) {
 		e.preventDefault();
@@ -22,4 +22,4 @@ function deleteItem(el) {
 	
 }
 
-export default deleteItem;
+export default deleteZone;

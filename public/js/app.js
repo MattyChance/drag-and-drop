@@ -1,12 +1,12 @@
 //import the sortable module
 import sortable from './sortable.js';
 import addNewItem from './addNewItem.js'
-import deleteItem from './deleteItem.js'
+import deleteZone from './deleteItem.js'
 
 sortable(document.getElementById('list'), function(listItem) {
 	console.log(listItem);
 });
 
-addNewItem(document.getElementById('button'));
+document.getElementById('button').onclick = addNewItem;
 
-deleteItem(document.getElementById('drop-area'));
+deleteZone(document.getElementById('drop-area'));

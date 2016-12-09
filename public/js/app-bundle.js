@@ -65,7 +65,7 @@
 	}); //import the sortable module
 	
 	
-	(0, _addNewItem2.default)(document.getElementById('button'));
+	document.getElementById('button').onclick = _addNewItem2.default;
 	
 	(0, _deleteItem2.default)(document.getElementById('drop-area'));
 
@@ -151,21 +151,20 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	function addNewItem(el) {
-		el.onclick = function () {
-			var listLength = document.getElementById('list').children.length;
+	function addNewItem() {
+		var listLength = document.getElementById('list').children.length;
 	
-			if (listLength >= 10) {
-				alert('Sorry! you can only have ten items!');
-			} else {
+		if (listLength >= 10) {
+			alert('Sorry! you can only have ten items!');
+		} else {
 	
-				var newItem = document.createElement('li');
-				document.getElementById('list').appendChild(newItem);
-			}
-			(0, _sortable2.default)(document.getElementById('list'), function (item) {
-				return;
-			});
-		};
+			var newItem = document.createElement('li');
+			document.getElementById('list').appendChild(newItem);
+		}
+	
+		(0, _sortable2.default)(document.getElementById('list'), function (item) {
+			return;
+		});
 	} //this function makes the button add another item 
 	//it also counts how many items there are in the list
 	
@@ -187,7 +186,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	function deleteItem(el) {
+	function deleteZone(el) {
 	
 		el.addEventListener('dragenter', function (e) {
 			e.preventDefault();
@@ -205,7 +204,7 @@
 		});
 	} //deleting the item that is dragged into drop-area
 	
-	exports.default = deleteItem;
+	exports.default = deleteZone;
 
 /***/ }
 /******/ ]);
