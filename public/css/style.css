@@ -1,0 +1,26 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+li {
+    cursor: move;
+    margin: 1px;
+    padding: 5px 20px;
+    font-size: 20px;
+    background-color: #ccc;
+}
+
+.onGrab {
+    opacity: .4;
+}
+
+#drop-area {
+    border: 1px black solid;
+    height: 300px;
+    width: 800px;
+}
