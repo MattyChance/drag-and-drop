@@ -1,18 +1,45 @@
-ul {
+@import url(http://fonts.googleapis.com/css?family=Raleway:200,400,700);
+
+body {
     margin: 0;
-    padding: 0;
-    list-style: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
+    background: #2f3238;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
 }
 
-li {
+.addButton {
+    margin: 2em;
+    display: inline-block;
+}
+
+a {
+    background-color: white;
+    color: #ff7474;
+    cursor: pointer;
+    padding: 0.5em;
+    border-radius: 2px;
+
+}
+
+ul {
+    justify-content: center;
+    text-align: center;
+}
+
+
+#list li {
     cursor: move;
-    margin: 1px;
-    padding: 5px 20px;
-    font-size: 20px;
-    background-color: #ccc;
+    font-size: 2em;
+    display: inline-block;
+    margin: 0.2em 0.1em;
+    padding-top: 2.25em;
+    width: 5.5em;
+    height: 5.5em;
+    border-radius: 4px;
+    background: #403E45;
+    color: #76737C;
 }
 
 .onGrab {
@@ -20,7 +47,22 @@ li {
 }
 
 #drop-area {
-    border: 1px black solid;
-    height: 300px;
-    width: 800px;
+    justify-content: center;
+    text-align: center;
 }
+
+#drop-area i {
+    color: #3498db;
+    text-decoration: none;
+    outline: none;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.over i {
+    border: 2px dashed #000;
+
+}
+

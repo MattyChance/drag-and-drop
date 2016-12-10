@@ -3,8 +3,13 @@
 <head>
 	<title>Drag and Drop</title>
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+	<main>
+	<div class="addButton">
+		<a id="button">Add an item</a>
+	</div>
 	<div>
 		<ul id="list">
 		    <li>item 1</li>
@@ -12,12 +17,11 @@
 		    <li>item 3</li>
 		</ul>
 	</div>
-	<div>
-		<button id="button">+</button>
-	</div>
+
 	<div id="drop-area">
-		<i class="fa fa-trash" aria-hidden="true"></i>
+		<i id="bin" class="fa fa-trash fa-5x" aria-hidden="true"></i>
 	</div>
+	</main>
 	<script type="text/javascript" src="/js/app-bundle.js""></script>
-</body>
+ </body>
 </html>
