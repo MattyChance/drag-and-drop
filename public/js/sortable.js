@@ -7,7 +7,7 @@ function sortable(rootElements, onUpdate) {
       itemElement.id = index;
       itemElement.innerHTML = "Item " + parseInt(index + 1);
    });
-  
+
    // sorting function
    function _onDragOver(event) {
        event.preventDefault();
